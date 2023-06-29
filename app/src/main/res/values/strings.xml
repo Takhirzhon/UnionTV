@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UnionTV</string>
+    <string name="register">Нет аккаунта? Зарегистрируйтесь</string>
+    <string name="sign">Войти</string>
+</resources>
