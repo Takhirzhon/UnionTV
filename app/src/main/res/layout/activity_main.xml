@@ -1,40 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@drawable/login"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="571dp"
         android:background="@drawable/stroke_btn_in"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="571dp"
-        tools:ignore="MissingConstraints" />
+        android:text="@string/sign"
+        />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/registerAcc"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="662dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="662dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register"
         android:textColor="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="662dp" />
+        android:onClick="onClick"
+        android:clickable="true"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+</RelativeLayout>

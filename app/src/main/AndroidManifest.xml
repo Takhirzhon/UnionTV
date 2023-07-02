@@ -17,6 +17,7 @@
         >
         <activity
             android:name="com.tokhirzhon.uniontv.MainActivity"
+
             android:exported="true"
             >
             <intent-filter>
@@ -25,6 +26,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name=".LogIn"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value=""/>
+        <activity
+            android:name=".Register"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value=""/>
+        </application>
 </manifest>

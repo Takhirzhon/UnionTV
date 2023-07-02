@@ -2,4 +2,6 @@
     <string name="app_name">UnionTV</string>
     <string name="register">Нет аккаунта? Зарегистрируйтесь</string>
     <string name="sign">Войти</string>
+    <string name="username">Введите вашу почту</string>
+    <string name="password">Пароль</string>
 </resources>
