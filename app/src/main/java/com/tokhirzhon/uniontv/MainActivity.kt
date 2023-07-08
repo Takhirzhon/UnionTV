@@ -3,7 +3,6 @@ package com.tokhirzhon.uniontv
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +25,7 @@ open class MainActivity : AppCompatActivity() {
         //Button войти начало
         val voyti = findViewById<Button>(R.id.login)
         voyti.setOnClickListener {
-            val intent = Intent(this, Register::class.java)
+            val intent = Intent(this, LogIn::class.java)
             startActivity(intent)
         }//End of buttom Войти
 

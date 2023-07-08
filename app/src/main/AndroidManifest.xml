@@ -41,5 +41,12 @@
         <meta-data
             android:name="android.app.lib_name"
             android:value=""/>
-        </application>
+    <activity
+        android:name=".PageMain"
+        android:exported="true"
+        android:screenOrientation="portrait" />
+    <meta-data
+        android:name="android.app.lib_name"
+        android:value=""/>
+</application>
 </manifest>

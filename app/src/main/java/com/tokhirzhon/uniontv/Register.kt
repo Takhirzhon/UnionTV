@@ -15,9 +15,6 @@ class Register : AppCompatActivity() {
     private lateinit var db: FirebaseDatabase
     private lateinit var users: DatabaseReference
 
-    private lateinit var email: String
-    private lateinit var password: String
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.register_layout)
@@ -26,36 +23,29 @@ class Register : AppCompatActivity() {
         db = FirebaseDatabase.getInstance()
         users = db.getReference("Users")
 
-        val emailEditText = findViewById<EditText>(R.id.emailReg)
-        val passwordEditText = findViewById<EditText>(R.id.passwordCreate)
-
-        email = emailEditText.text.toString()
-        password = passwordEditText.text.toString()
-
         val registerButton = findViewById<Button>(R.id.regbtn)
         registerButton.setOnClickListener {
             registerUser()
+            val intent : Intent = Intent(this, PageMain::class.java)
+            startActivity(intent)
         }
     }
 
     private fun registerUser() {
+        val emailEditText = findViewById<EditText>(R.id.emailReg)
+        val passwordEditText = findViewById<EditText>(R.id.passwordCreate)
+
+        val email = emailEditText.text.toString()
+        val password = passwordEditText.text.toString()
+
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     println("Success")
                 } else {
                     println("Sorry, something went wrong")
+
                 }
             }
-    }
-
-    public override fun onStart() {
-        super.onStart()
-        // Check if user is signed in.
-        if (auth.currentUser == null) {
-            // Not signed in, launch the Sign In activity
-            startActivity(Intent(this, LogIn::class.java))
-            finish()
-        }
     }
 }
