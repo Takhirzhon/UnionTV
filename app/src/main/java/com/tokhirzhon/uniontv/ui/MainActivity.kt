@@ -1,4 +1,4 @@
-package com.tokhirzhon.uniontv
+package com.tokhirzhon.uniontv.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.tokhirzhon.uniontv.R
 
 
 open class MainActivity : AppCompatActivity() {
