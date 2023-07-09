@@ -1,4 +1,4 @@
-package com.tokhirzhon.uniontv.ui
+package com.tokhirzhon.uniontv.ui.main
 
 import android.annotation.SuppressLint
 import android.content.Intent

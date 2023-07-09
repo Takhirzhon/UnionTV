@@ -1,4 +1,4 @@
-package com.tokhirzhon.uniontv.ui
+package com.tokhirzhon.uniontv.ui.main
 
 import android.content.Intent
 import android.os.Bundle

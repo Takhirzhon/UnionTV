@@ -16,7 +16,7 @@
         android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
         >
         <activity
-            android:name="com.tokhirzhon.uniontv.ui.MainActivity"
+            android:name="com.tokhirzhon.uniontv.ui.main.MainActivity"
 
             android:exported="true"
             >
@@ -28,21 +28,21 @@
         </activity>
 
         <activity
-            android:name=".ui.LogIn"
+            android:name=".ui.main.LogIn"
             android:exported="true"
             android:screenOrientation="portrait"/>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value=""/>
         <activity
-            android:name=".ui.Register"
+            android:name=".ui.main.Register"
             android:exported="true"
             android:screenOrientation="portrait" />
         <meta-data
             android:name="android.app.lib_name"
             android:value=""/>
     <activity
-        android:name=".ui.PageMain"
+        android:name=".ui.main.PageMain"
         android:exported="true"
         android:screenOrientation="portrait" />
     <meta-data
